@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="hero">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sevices.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav><br><br>
+        <div class="descrip-contactus">
+            <div class="name-contact">
+                <h2>C</h2>
+                <h2>O</h2>
+                <h2>N</h2>
+                <h2>T</h2>
+                <h2>A</h2>
+                <h2>C</h2>
+                <h2>T</h2>
+                <h2>-</h2>
+                <h2>M</h2>
+                <h2>E</h2>
+            </div><br>
+        </div>
+
+        <div class="container-contact">
+            <div class="topc">
+                <h1>You Can Always Contact With Me</h1>
+                <p>I Would Love To Responsed To Your Queries And Help You Succeed.Feel Free To Get In Touch With Me</p>
+            </div><br><br>
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3>Send Your Request</h3>
+                    <form id="userform" method="post">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="name">Name</label>
+                                <input type="text" placeholder="W.M Nimal Kulathunge" id="name">
+                            </div>
+                            <div class="input-group">
+                                <label for="phone">Phone No</label>
+                                <input type="number" placeholder="07xxxxxxxxx" id="phone">
+                            </div>
+                            <div class="input-group">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="nimalkulathunge@gmail.com" id="email">
+                            </div>
+                            <div class="input-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" placeholder="About the......." id="subject">
+                            </div>
+                            <label for="massage">Message</label>
+                            <textarea name="message" rows="6" placeholder="Please write down your message here"
+                                id="message"></textarea>
+                            <button type="submit" value="submit" id="submit" onclick="mysubmit()">SEND</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQwfUS6xYbbxtXCMgfr0YUZHQgZhvxs00twg&usqp=CAU"
+                            alt="">
+                        <h4>Address</h4><br>
+                        <p>25"wijaya',<br>Rubbarwaththa,<br>Tissamaharama</p>
+                    </div>
+                    <div>
+                        <img src="data:image/png;base64,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"
+                            alt="">
+                        <h4>Phone</h4><br>
+                        <p>047-4677022<br>047-4677024<br>070-6634501</p>
+                    </div>
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMmopx-FgHpZmf-QLXWhirHsA2TBJKLDcSWw&usqp=CAU"
+                            alt="">
+                        <h4>Email</h4><br>
+                        <p>hmpridmika@gmail.com<br>ridmikahmp.21@uom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
+        import { getDatabase, set, ref } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBgSsw62tJRXAVuxn0yRprsJoaAkLkaIig",
+            authDomain: "contact-e7492.firebaseapp.com",
+            databaseURL: "https://contact-e7492-default-rtdb.firebaseio.com",
+            projectId: "contact-e7492",
+            storageBucket: "contact-e7492.appspot.com",
+            messagingSenderId: "632934754717",
+            appId: "1:632934754717:web:044884a0507cdceaf06774"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        const db = getDatabase(app);
+        console.log(db);
+
+        document.getElementById("userform").addEventListener("submit", function (e) {
+
+            e.preventDefault();
+            let userId = document.getElementById("name").value;
+            let phone = document.getElementById("phone").value;
+            let email = document.getElementById("email").value;
+            let subject = document.getElementById("subject").value;
+            let message = document.getElementById("message").value;
+
+            set(ref(db, 'users/' + userId), {
+                name: userId,
+                phone: phone,
+                email: email,
+                subject: subject,
+                message: message,
+
+
+            });
+        });
+
+
+    </script>
+
+    <script>
+        function mysubmit() {
+            alert("Massage send");
+        }
+    </script>
+
+</body>
+
+<footer class="footer">
+    <div class="in-footer">
+        <div class="social-links">
+            <ul>
+                <li class="social-items"><a href="https://www.facebook.com/"><i
+                            class="fa-brands fa-square-facebook"></i></a></li>
+                <li class="social-items"><a href="https://www.twitter.com/"><i
+                            class="fa-brands fa-square-twitter"></i></a></li>
+                <li class="social-items"><a href="https://www.instagram.com/"><i
+                            class="fa-brands fa-square-instagram"></i></a></li>
+                <li class="social-items"><a href="https://www.tumbir.com/"><i
+                            class="fa-brands fa-square-tumblr"></i></a></li>
+                <li class="social-items"><a href="https://www.whatsapp.com/"><i
+                            class="fa-brands fa-square-whatsapp"></i></a></li>
+            </ul>
+        </div>
+        <div class="quick-links">
+            <ul>
+                <li class="quick-items"><a href="index.html">Home</a></li>
+                <li class="quick-items"><a href="about.html">About</a></li>
+                <li class="quick-items"><a href="sevices.html">Services</a></li>
+              <li class="quick-items"><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="out-footer">
+        Copyright &copy; Pebhashi Ridmika. All Right Reserved
+    </div>
+</footer>
+
+
+</html>
